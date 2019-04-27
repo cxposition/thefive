@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText android:id="@+id/name"
+            android:text=""
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip" >
+        </EditText>
+        <TextView android:id="@+id/name_label"
+            android:text="@string/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/name"
+            android:layout_alignBaseline="@+id/name">
+        </TextView>
+
+        <EditText android:id="@+id/pwd"
+            android:text=""
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:inputType="textPassword"
+            android:layout_below="@id/name"
+            android:numeric="integer">
+        </EditText>
+        <TextView android:id="@+id/pwd_label"
+            android:text="@string/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/pwd"
+            android:layout_alignBaseline="@+id/pwd" >
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/RadioGroup01"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RadioButton01"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/rb1">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/RadioButton02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb2">
+            </RadioButton>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/sexy_label"
+            android:text="@string/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+            <!--android:layout_alignBaseline="@+id/sexy"
+            android:layout_toRightOf="@id/sexy">-->
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/RadioGroup02"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RadioButton03"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/rb3">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/RadioButton04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb4">
+            </RadioButton>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/isused_label"
+            android:text="@string/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+            <!--android:layout_alignBaseline="@+id/sexy"
+            android:layout_toRightOf="@id/sexy">-->
+        </TextView>
+    </RelativeLayout>
+
+    <TextView android:id="@+id/label"
+        android:text="@string/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:text="@string/tv5"></TextView>
+
+        <EditText
+            android:id="@+id/id_entry"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dip"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10px"
+            android:padding="3dip"
+            android:text="@string/btn5"></Button>
+
+        <Button
+            android:id="@+id/query"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10px"
+            android:padding="3dip"
+            android:text="@string/btn6"></Button>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10px"
+            android:padding="3dip"
+            android:text="@string/btn7"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10px"
+            android:padding="5dip"
+            android:text="@string/btn1"></Button>
+
+        <Button
+            android:id="@+id/query_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10px"
+            android:padding="5dip"
+            android:text="@string/btn2"></Button>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10px"
+            android:padding="5dip"
+            android:text="@string/btn3"></Button>
+
+        <Button
+            android:id="@+id/delete_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10px"
+            android:padding="5dip"
+            android:text="@string/btn4"></Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
